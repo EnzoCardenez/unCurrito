@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Iniciar Sesión - unCurrito</title>
+  <meta name="description" content="Inicia sesión en tu cuenta unCurrito para acceder a servicios locales de confianza." />
+</head>
+<body>
+
+  <header>
+      <nav>
+        <a href="/" class="marca" aria-label="Inicio unCurrito">
+          <img src="logo-uncurrito.svg" alt="unCurrito" width="108" height="28" />
+        </a>
+
+        <ul>
+          <li><a href="/">Inicio</a></li>
+          <li><a href="/registro">Registro</a></li>
+          <li><a href="/iniciar-sesion">Iniciar Sesión</a></li>
+        </ul>
+
+        <div>
+          <a href="/iniciar-sesion">Iniciar Sesión</a>
+          <a href="/registro">Registro</a>
+        </div>
+      </nav>
+  </header>
+
+  <main>
+    <section class="seccion_login">
+      <div class="contenedor_login">
+        <h1>Bienvenido de nuevo</h1>
+        <p class="subtitulo">Inicia sesión en tu cuenta unCurrito para continuar</p>
+
+        <form class="formulario_login" method="post" action="/iniciar-sesion">
+          <div class="campo_formulario">
+            <label for="correo">Correo electrónico</label>
+            <input 
+              type="email" 
+              id="correo" 
+              name="correo" 
+              placeholder="correo@ejemplo.com" 
+              required 
+              autocomplete="email"
+            />
+          </div>
+
+          <div class="campo_formulario">
+            <label for="contrasena">Contraseña</label>
+            <input 
+              type="password" 
+              id="contrasena" 
+              name="contrasena" 
+              placeholder="••••••••" 
+              required 
+              autocomplete="current-password"
+            />
+          </div>
+
+          <div class="opciones_formulario">
+            <label class="etiqueta_checkbox">
+              <input type="checkbox" name="recordar" id="recordar" />
+              <span class="marca_check"></span>
+              Recordarme
+            </label>
+          </div>
+
+          <button type="submit" class="boton boton-primario boton-completo">Iniciar Sesión</button>
+
+          <div class="pie_formulario">
+            <p>¿No tienes una cuenta? <a href="/registro">Registrarse</a></p>
+          </div>
+        </form>
+
+        <div class="aviso_seguridad">
+          <div class="icono_seguridad">🔒</div>
+          <p>Este sitio está protegido por reCAPTCHA y se aplican la <a href="/politica-privacidad">Política de Privacidad</a> y los <a href="/terminos">Términos de Servicio</a> de Google.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="contenido_footer">
+      <div class="marca_footer">
+        <img src="logo-uncurrito.svg" alt="unCurrito" width="108" height="28" />
+        <p>© 2025 unCurrito. Todos los derechos reservados. unCurrito es una plataforma dedicada a conectar usuarios con servicios locales de manera eficiente y amigable. Descubre nuevas oportunidades y simplifica tu día a día.</p>
+      </div>
+
+      <div class="navegacion_footer">
+        <h3>Navegación</h3>
+        <ul>
+          <li><a href="/">Inicio</a></li>
+          <li><a href="/politica-privacidad">Política de Privacidad</a></li>
+          <li><a href="/terminos">Términos y Condiciones</a></li>
+          <li><a href="/contacto">Contacto</a></li>
+        </ul>
+      </div>
+
+      <div class="social_footer">
+        <h3>Síguenos</h3>
+        <div class="enlaces_sociales">
+          <a href="#" aria-label="Facebook">📘</a>
+          <a href="#" aria-label="Twitter">🐦</a>
+          <a href="#" aria-label="Instagram">📷</a>
+          <a href="#" aria-label="LinkedIn">💼</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="pie_footer">
+      <small>© 2025 unCurrito. Todos los derechos reservados.</small>
+    </div>
+  </footer>
+
+</body>
+</html>
